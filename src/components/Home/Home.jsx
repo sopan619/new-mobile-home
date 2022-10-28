@@ -12,7 +12,8 @@ const Home = () => {
             layout
           >
             Hi, <br />
-            I'm <b className="text-apna-lime dark:text-[#FBDF07]"> Sopan.</b>
+            I am <br />{" "}
+            <b className="text-apna-lime dark:text-[#FBDF07]"> Sopan.</b>
           </motion.h1>
           <div className="layout">
             <motion.div
