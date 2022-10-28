@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
+import About from "../About/About";
 
 const Home = () => {
   const [show, setShow] = useState(false);
@@ -11,9 +12,15 @@ const Home = () => {
             className="text-5xl text-apna-light font-bold font-labell"
             layout
           >
+            <span className="font-labell text-[14px] mt-[-12px] absolute left-28 text-apna-lime dark:text-[#F0FF42]">
+              &lt; h1 &gt;
+            </span>
             Hi, <br />
             I am <br />{" "}
             <b className="text-apna-lime dark:text-[#FBDF07]"> Sopan.</b>
+            <span className="font-labell text-[14px] absolute right-24 text-apna-lime dark:text-[#F0FF42] w-fit mt-[35px]">
+              &lt;/ h1 &gt;
+            </span>
           </motion.h1>
           <div className="layout">
             <motion.div
@@ -48,6 +55,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <About />
     </>
   );
 };

@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar w-full md:max-w-[1200px] md:mx-auto bg-apna-dark dark:bg-[#FBDF07] h-[8vh] flex justify-between px-4 items-center">
+      <nav className="navbar sticky z-10 top-0 w-full md:max-w-[1200px] md:mx-auto bg-apna-dark dark:bg-[#FBDF07] h-[8vh] flex justify-between px-4 items-center">
         <div className="logo text-apna-lime dark:text-apna-main font-labell font-bold text-[40px]">
           Sopan.
         </div>
@@ -73,7 +73,7 @@ const Navbar = () => {
 
         {navOpen && (
           <motion.div
-            className="menu-items z-10 bg-apna-dark/90 dark:bg-[#F0E161]/70 absolute top-[8vh] right-0 h-[92vh] w-[70%]"
+            className="menu-items z-10 bg-apna-dark/90 dark:bg-[#F0E161]/90 absolute top-[8vh] right-0 h-[92vh] w-[70%]"
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             tr
